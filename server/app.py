@@ -176,5 +176,5 @@ api.add_resource(Airports, '/airports', endpoint='airports')
 api.add_resource(AddPointsToUser, '/addpointstouser/<int:user_id>', endpoint='/addpointstouser/<int:user_id>')
 
 
-if __name__ == '__main__':
-    app.run(port=5556, debug=True, host="192.168.1.118")
+# if __name__ == '__main__':
+#     app.run(port=5556, debug=True, host="10.129.2.122")

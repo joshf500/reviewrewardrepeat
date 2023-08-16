@@ -14,7 +14,7 @@ const ReviewsAndRewardsScreen = ({navigation}) => {
   const reward4Cost= 9000
  
     const fetchUserPoints = () => {
-      fetch(`http://192.168.1.118:5556/check_session`)
+      fetch(`http://10.129.2.122:5556/check_session`)
         .then(response => response.json())
         .then(data => {
           setUserPoints(data.points);

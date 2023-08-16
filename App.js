@@ -23,7 +23,7 @@ const Auth = ({onLogin}) => {
   
   // useEffect(() => {
   //   // auto-login
-  //   fetch("http://192.168.1.118:5556:5556:5556:5556:5556:5556:5556:5556:5556:5556/check_session").then((r) => {
+  //   fetch("http://10.129.2.122:5556:5556:5556:5556:5556:5556:5556:5556:5556:5556/check_session").then((r) => {
   //     if (r.ok) {
   //       r.json().then((user) => setUser(user));
   //     }
@@ -61,7 +61,7 @@ const App = () => {
   
   useEffect(() => {
     // auto-login
-    fetch("http://192.168.1.118:5556/check_session").then((r) => {
+    fetch("http://10.129.2.122:5556/check_session").then((r) => {
       if (r.ok) {
         console.log(r)
         r.json().then((user) => setUser(user));

@@ -66,7 +66,7 @@ const RegisterScreen = ({navigation}) => {
     // }
     // formBody = formBody.join('&');
 
-    fetch('http://192.168.1.118:5556/signup', {
+    fetch('http://10.129.2.122:5556/signup', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

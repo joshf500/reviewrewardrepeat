@@ -56,7 +56,7 @@ const LoginScreen = ({navigation, route}) => {
     
     // formBody = formBody.join('&');
 
-    await fetch('http://192.168.1.118:5556/login', {
+    await fetch('http://10.129.2.122:5556/login', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

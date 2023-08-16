@@ -53,7 +53,7 @@ const CustomSidebarMenu = (props) => {
                   text: 'Confirm',
                   onPress: async () => {
                     try{
-                    const response = await fetch('http://192.168.1.118:5556/logout', {
+                    const response = await fetch('http://10.129.2.122:5556/logout', {
                       method: 'DELETE'
                     })
                       .then( async r => {

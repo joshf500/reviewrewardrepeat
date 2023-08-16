@@ -50,7 +50,7 @@ const HomeScreen = ({route, navigation}) => {
     Keyboard.dismiss();
   };
   useEffect(() => {
-    fetch(`http://192.168.1.118:5556/airports`)
+    fetch(`http://10.129.2.122:5556/airports`)
       .then(res => res.json())
       .then(data => {
         setAirportList(data)
@@ -131,7 +131,7 @@ const handleDashboardNavigation = () =>{
 }
 
   useEffect(() => {
-    fetch(`http://192.168.1.118:5556/airlines`)
+    fetch(`http://10.129.2.122:5556/airlines`)
       .then(res => res.json())
       .then(data => {
         setAirlineList(data)
@@ -140,7 +140,7 @@ const handleDashboardNavigation = () =>{
   }, []);
 
   const handleSubmit = () => {
-    fetch('http://192.168.1.118:5556/reviews', {
+    fetch('http://10.129.2.122:5556/reviews', {
       method: "POST",
       headers: {
         'Content-Type': 'application/json',
@@ -182,7 +182,7 @@ const handleDashboardNavigation = () =>{
         setFurtherComments("")
         console.log("Review created:", r.json())
 
-        fetch(`http://192.168.1.118:5556/addpointstouser/${user.id}`, {
+        fetch(`http://10.129.2.122:5556/addpointstouser/${user.id}`, {
           method: "PATCH",
           headers: {
           'Content-Type': 'application/json',
