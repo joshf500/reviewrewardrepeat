@@ -8,7 +8,7 @@ from flask_restful import Resource
 from sqlalchemy.exc import IntegrityError
 # Local imports
 from config import app, db, api
-import ipdb
+# import ipdb
 from datetime import date
 from models import User, Review, Airline, Airport
 
