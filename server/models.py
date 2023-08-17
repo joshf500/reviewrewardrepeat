@@ -1,3 +1,4 @@
+from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy.ext.hybrid import hybrid_property
 from sqlalchemy.orm import validates
 from sqlalchemy.ext.associationproxy import association_proxy
@@ -7,6 +8,7 @@ from config import db, bcrypt
 from datetime import date
 import re
 
+db = SQLAlchemy()
 # Models go here!
 class User(db.Model, SerializerMixin):
     __tablename__ = "users"

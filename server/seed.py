@@ -16,7 +16,10 @@ from sqlalchemy import create_engine, Column, Integer, String
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy.ext.declarative import declarative_base
 
-if __name__ == '__main__':
+# if __name__ == '__main__':
+
+with app.app_context():
+
     fake = Faker()
     with app.app_context():
         print("Starting seed...")
