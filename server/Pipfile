@@ -13,6 +13,8 @@ flask-cors = "*"
 requests = "*"
 flask-serialize = "*"
 flask-bcrypt = "*"
+gunicorn = "*"
+psycopg2-binary = "*"
 
 [dev-packages]
 

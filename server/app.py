@@ -177,4 +177,4 @@ api.add_resource(AddPointsToUser, '/addpointstouser/<int:user_id>', endpoint='/a
 
 
 # if __name__ == '__main__':
-#     app.run(port=5556, debug=True, host="10.129.2.122")
+#    app.run(port=5556, debug=True, host="10.129.2.122")
